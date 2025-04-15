@@ -1,3 +1,19 @@
 import bebidas.*
 import tito.*
 
+describe "bebidas" {
+  test "tito consume 5 de terere (su velocidad es 7)" {
+    tito.consumir(5, terere)
+    assert.equals(7, tito.velocidad())
+  }
+
+  test "tito consume 5 de whisky (su velocidad es 4.13343)" {
+    tito.consumir(5, whisky)
+    assert.equals(4.13343, tito.velocidad())
+  }
+
+  test "tito consume 5 de cianuro (su velocidad es 0)" {
+    tito.consumir(5, cianuro)
+    assert.equals(0, tito.velocidad())
+  }
+}
