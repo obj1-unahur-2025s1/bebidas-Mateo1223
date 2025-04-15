@@ -1,7 +1,13 @@
 import bebidas.*
 import tito.*
 
-describe "bebidas" {
+describe "tito" {
+
+  test "tito tiene peso 70" {
+    assert.equals(70, tito.peso())
+  }
+
+
   test "tito consume 5 de terere (su velocidad es 7)" {
     tito.consumir(5, terere)
     assert.equals(7, tito.velocidad())
